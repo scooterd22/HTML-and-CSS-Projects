@@ -1,0 +1,24 @@
+table {
+	border: 1px solid silver;
+}
+td: hover {
+	background-color: orange;
+	color: white
+}
+tr, th {
+	background-color: black;
+	color: yellow;
+}
+
+tr, td {
+	background-color: darkgreen;
+	color: white;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+ul {
+	list-style-type: square;
+}
