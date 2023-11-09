@@ -1,0 +1,13 @@
+p {color: darkblue;}
+
+h1 {color: darkblue;}
+
+h2 {color: darkblue;}
+
+h3 {color: darkblue;
+    text-align: center;}     
+
+img {
+    border-style: dotted;
+    border-color: red;
+}
