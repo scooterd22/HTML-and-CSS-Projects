@@ -1,0 +1,88 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    background-color: beige;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: burlywood;
+    font-family: cursive;
+}
+
+
+input { 
+    padding: 10px;
+    width: 200px;
+    margin: 10px 0;
+    border: 1px solid silver;
+    border-radius: 10px;
+
+}
+
+li {
+    font-size: 20px;
+    text-align: center;
+}
+
+.form_layout {
+    text-align: center;
+}
+
+.menu {
+    font-family: cursive;
+    text-align: center;
+}
+
+.menu li {
+    color: burlywood;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    margin: 0% auto;
+    position: relative;
+    padding: 10px 4%;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+    
+.menu li:hover {
+    color: black;
+    background-color: white;
+}
+
+.submit {
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.gallery img {
+    width: 300px; 
+    height: 300px;
+    border: 2px double black;
+    border-radius: 6px;
+}
+
+.bunny_live iframe {
+    border: 5px dashed burlywood;
+}
+
+.bunny_live {
+    text-align: center;
+}
+
+.image_container {
+    display: flex;
+}
+
+.gallery {
+    padding: 5px;
+    text-align: center;
+}

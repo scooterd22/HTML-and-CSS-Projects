@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title> Bunny Hotel </title>
+		<link rel="stylesheet" href="./one_page_website.css"> 
 	</head>
+
 		<body>
 		
 	<!-- nav--->
-	<div>
-	
+	<div class="menu">
 		<ul>
 			<a href="#home" id=link><li> HOME </li></a>
 			<a href="#gallery"> <li> GALLERY </li> </a>
@@ -20,9 +21,11 @@
 	
 	<!-- website name header -->
 	<div id="home">
-		<h1> BUNNY HOTEL <h1>
-
-		</div>
+		<h1> THE BUNNY HOTEL </h1>
+	</div>
+	<div class="logo">
+		<img src="photos/logo.png" alt="image could not be loaded" style="width:100px;height:100px">
+	</div>
 	<!-- website name header -->
 		
 	<!-- gallery section -->
@@ -33,23 +36,25 @@
 	<!-- gallery section ends -->
 	
 	<!-- photo 1 -->
-	<div>
-		<img src="photos\thumbnail_1.jpg" alt="image not working" >
-			<p> A Holland Lop enjoying our play area</p>
-	</div>
+	<div class="image_container">
+		<div class="gallery">
+				<img src="photos\thumbnail_1.jpg" alt="image not working" width="300px">
+				<p> A Holland Lop playing</p>
+			</div>
 	<!-- photo 1 ends -->	
 	
 	<!-- photo 2 -->
-	<div>
-		<img src="photos\thumbnail_2.png" alt="image not working" >
-			<p> A Flemish Giant sleeping</p>
+	<div class="gallery">
+			<img src="photos\thumbnail_2.png" alt="image not working" >
+		<p> A Flemish Giant sleeping</p>
 	</div>
 	<!-- photo 2 ends -->		
 	
 	<!-- photo 3 -->
-	<div>
-		<img src="photos\thumbnail_3.jpg" alt="image not working" >
-			<p> An Angora being brushed</p>
+	<div class="gallery">
+			<img src="photos\thumbnail_3.jpg" alt="image not working" >
+		<p> An Angora being brushed</p>
+		</div>
 	</div>
 	</section>
 	<!-- photo 3 ends -->	
@@ -58,8 +63,10 @@
 	<section>
 		<div id="video"> 
 			<h3> LIVE FEED OF OUR BUNNIES </h3>
+			<div class="bunny_live">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/eVNuJfvQx8s?si=tl3f4EcW0Ztf3Ms3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
+	</div>
 	</section>
 	<!-- video ends -->
 	
@@ -69,20 +76,22 @@
 					<h1>BOOKING</h1>
 					</div>
 						<h2>Book Your Bunnies Visit Today!</h2> 
-						<div>
+						<div class="form_layout">
 							<form action="" method="post">
-								<input class"rvsp" type="text" value="first name">
-								<input class"rvsp" type="text" value="last name">
+								<input class="rvsp" type="text" value="first name">
+								<input class="rvsp" type="text" value="last name">
 								<br>
-								<input class"rvsp" type="text" value="email address">
-								<input class"rvsp" type="text" value="phone number">
+								<input class="rvsp" type="text" value="email address">
+								<input class="rvsp" type="text" value="phone number">
 								<br>
-								<input class"rvsp" type="text" value="bunny's name">
-								<input class"rvsp" type="text" value="bunny's type">
-								<input class"rvsp" type="text" value="bunny's weight"> 
+								<input class="rvsp" type="text" value="bunny's name">
+								<input class="rvsp" type="text" value="bunny's type">
+								<input class="rvsp" type="text" value="bunny's weight"> 
 								</div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 							</form>
+							</div>
 		</section>
 	<!-- contact form ends -->
 	
@@ -90,8 +99,9 @@
 	<section>
 		<div>
 			<footer>
-				<p> Author: Scott DiBenedetto </p>
-				<p> <a href="bunnyhotel@bunnyhotel.com"> bunnyhotel@bunnyhotel.com </a></p>
+				<div class="email">
+					<p> Author: Scott DiBenedettto Contact: <a href="bunnyhotel@bunnyhotel.com"> bunnyhotel@bunnyhotel.com </a></p>
+				</div>
 			</footer>
 		</div>
 	</section>
