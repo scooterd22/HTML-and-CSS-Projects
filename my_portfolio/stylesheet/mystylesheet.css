@@ -1,0 +1,209 @@
+body { /* body */
+    margin: 0%;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 { /* Heading 1 elements */
+    text-transform: uppercase;
+    text-align: center;
+    color: darkgreen;
+    margin: 3%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.white-text { /* portfolio color */
+    color: ivory;
+   
+}
+
+.white-intro {
+    color: white;
+}
+
+/* Paragraph elements */
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+/* Anchor elements */
+a {
+    color: blue; /* This ensures all links are blue */
+}
+
+/* Image elements */
+img {
+    border-radius: 8px;
+    max-width: 100%; 
+    height: 340px; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+@media screen and (max-width: 576px) { /* shrinks images to fit correctly on the screen */
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+footer {
+    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    background-color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: beige; 
+    position: fixed; /* keeps the navbar at the top of the screen as we scroll */
+    top: 0; 
+    width: 100%;
+    z-index: 1; 
+    -webkit-animation: moveNav 5s; /* This applies the moveNav animation below for Safari 4.0 - 8.0 */
+    animation: moveNav 5s; /* This applies the moveNav animation for all other browsers */
+}
+
+.navbar a {
+    color: darkgreen;
+    float: left; /* makes the menu to the left */
+    padding: 14px 16px; /* adds the space we need around the text */
+    text-decoration: none; /* gets rid of the underline */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */ 
+}
+
+/* navbar links will be equal on smaller screens */
+@media screen and (max-width: 576px) {
+    .navbar a{
+        width: 25%; /* This makes each link take up 1/4 of the navbar */
+        font-size: 12px;
+    }
+}
+
+/* Navbar hover effects */
+.navbar a:hover {
+    background-color: ivory; 
+    color: black; 
+    font-weight: bold; 
+}
+
+
+/* table styling */
+
+* { /* selects all elements on the page */
+    box-sizing: border-box; /* creates a box that the text will go in */
+} 
+
+
+.column_1 {
+    float: left;
+    width: 50%; /*takes up half of the page width */
+    padding: 10px;
+    padding-top: 3%; 
+    height: 400px; 
+    background-color: ivory; /* Sets the background color of the columns with class Column_1 */
+}
+
+
+/* adds additional scroll bar if content overlfow */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: forestgreen;
+}
+
+.column_tall { /* selects contact form and makes it taller by 50px */
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.row:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+/* contact form */
+
+input[type=text] {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid darkgreen; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px black inset; /* This creates a blue shadow in the text box when hovered over by the user */
+}
+
+input[type=submit] {
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    display: block; /* centers the display */
+    margin-left: auto; /* if both this and right are auto then it centers the button */
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* hover effect for submit */
+input[type=submit]:hover {
+    background-color: ivory;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1s; /* cannot tell if this looks good tbh */
+}
+
+/* form element */
+form {
+    border-radius: 5px;
+    background-color: light gray;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Formatting for background video */
+#Typing_Video {
+    position: fixed; 
+    right: 0;
+    bottom: 0; 
+    min-width: 100%; 
+    z-index: -1; 
+}
+
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+
