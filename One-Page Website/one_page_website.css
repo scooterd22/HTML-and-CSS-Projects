@@ -79,21 +79,26 @@ li {
 }
 
 .row {
+    /* effects where the images are*/
     display: flex;
-    border: 2px solid black;
+    margin: 0px 400px;
+    
+
 }
+
+
 
 .gallery {
     padding: 5px;
 }
 
 .row > .column {
-    padding: 0 8px;
+    padding: 0px 18px;
 }
 
-.column {
-    float: left;
+.column { 
     width: 33%;
+    text-align: center;
 }
 
 .modal {
