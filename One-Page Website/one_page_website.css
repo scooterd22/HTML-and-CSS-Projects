@@ -68,6 +68,7 @@ li {
     height: 300px;
     border: 2px double black;
     border-radius: 6px;
+    display: inline-block;
 }
 
 .bunny_live iframe {
@@ -99,6 +100,7 @@ li {
 .column { 
     width: 33%;
     text-align: center;
+    float: left;
 }
 
 .modal {
@@ -203,3 +205,4 @@ img.hover-shadow {
 .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
