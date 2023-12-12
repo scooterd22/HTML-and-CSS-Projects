@@ -13,28 +13,35 @@
   <body>
  
     <div class="container">
-
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-
-          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- image on navbar -->
+                  <a class="navbar-brand" href="#Deals">
+                    <!-- this img if clicked will take you to the deals section of the website -->
+                    <img src="./imgs/mountian.jpg" width="20" height="20" alt="not working" id="nav-bar-image">
+                  </a>
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#About">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-link text-dark" href="#About">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#Reviews">Reviews</a>
+                  <a class="nav-link text-dark" href="#Reviews">Reviews</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#Shows">Shows and Hikes</a>
+                  <a class="nav-link text-dark" href="#Shows">Shows and Hikes</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-dark" href="#Deals">Deals</a>
                 </li>
               </ul>
+
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
           </nav>
+          
 
 
           <div class="jumbotron jumbotron-fluid bg-dark text-center">
@@ -97,7 +104,7 @@
     </div>
   </div>
 
-  <h3 id="Shows"> BOOK YOUR TRIP TODAY!</h3>
+  <h3 id="Shows" class="mx-auto" style="width: 400px;"> BOOK YOUR TRIP TODAY!</h3>
   <div class="cards">
     <div class="card-deck">
         <div class="card">
@@ -105,12 +112,12 @@
           <div class="card-body">
             <h5 class="card-title">See Our Star Otter: Teddy!</h5>
             <p class="card-text">Teddy is on a record killing spree of fifteen. He is the obvious leader and we are proud of his bloodline.</p>
-            <span class="badge badge-pill badge-info">12:00am</span>
-            <span class="badge badge-pill badge-info">1:00am</span>
-            <span class="badge badge-pill badge-info">2:00am</span>
-            <span class="badge badge-pill badge-info">3:00am</span>
-            <span class="badge badge-pill badge-info">4:00am</span>
-            <span class="badge badge-pill badge-info">5:00am</span>
+            <span class="badge badge-pill badge-warning">12:00am</span>
+            <span class="badge badge-pill badge-warning">1:00am</span>
+            <span class="badge badge-pill badge-warning">2:00am</span>
+            <span class="badge badge-pill badge-warning">3:00am</span>
+            <span class="badge badge-pill badge-warning">4:00am</span>
+            <span class="badge badge-pill badge-warning">5:00am</span>
           </div>
         </div>
         <div class="card">
@@ -118,12 +125,12 @@
           <div class="card-body">
             <h5 class="card-title">Deep Dive With Milli!</h5>
             <p class="card-text">How long can you hold your breath? Well you're about to find out!</p>
-            <span class="badge badge-pill badge-info">12:12am</span>
-            <span class="badge badge-pill badge-info">1:11am</span>
-            <span class="badge badge-pill badge-info">2:22am</span>
-            <span class="badge badge-pill badge-info">3:33am</span>
-            <span class="badge badge-pill badge-info">4:44am</span>
-            <span class="badge badge-pill badge-info">5:55am</span>
+            <span class="badge badge-pill badge-warning">12:12am</span>
+            <span class="badge badge-pill badge-warning">1:11am</span>
+            <span class="badge badge-pill badge-warning">2:22am</span>
+            <span class="badge badge-pill badge-warning">3:33am</span>
+            <span class="badge badge-pill badge-warning">4:44am</span>
+            <span class="badge badge-pill badge-warning">5:55am</span>
           </div>
         </div>
         <div class="card">
@@ -131,45 +138,84 @@
           <div class="card-body">
             <h5 class="card-title">Hike With Our Guide!</h5>
             <p class="card-text">Although this image looks like OM do not get it twisted, this looks nothing like OM and is put here for attraction</p>
-            <span class="badge badge-pill badge-info">1:00am</span>
-            <span class="badge badge-pill badge-info">1:15am</span>
-            <span class="badge badge-pill badge-info">1:30am</span>
-            <span class="badge badge-pill badge-info">1:45am</span>
-            <span class="badge badge-pill badge-info">2:00am</span>
-            <span class="badge badge-pill badge-info">2:15am</span>
+            <span class="badge badge-pill badge-warning">1:00am</span>
+            <span class="badge badge-pill badge-warning">1:15am</span>
+            <span class="badge badge-pill badge-warning">1:30am</span>
+            <span class="badge badge-pill badge-warning">1:45am</span>
+            <span class="badge badge-pill badge-warning">2:00am</span>
+            <span class="badge badge-pill badge-warning">2:15am</span>
           </div>
         </div>
       </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
+      <div class="jumbotron jumbotron-fluid bg-warning mt-5 text-center">
+        <div class="container">
+          <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family: roboto;font-weight: 900;text-transform: uppercase;">
+          Show Deals</h1>
+          <p class="lead" id="Deals"> Checkout our monthly deals...</p>
+          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#register">See our Monthly Movie Deals</button>
+        </div>
+      </div>
 
 
         <div class="text-center">
             <form>
-                <h1 class="text-primary my-5"> Sign up for our Emailing List!</h1>
+                <h1 class="text-warning my-5"> Sign up for our Emailing List!</h1>
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary btn-dark popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="To get updates on the chaos that is Otter Mountian.">
+                 Sign-up!
+                </button>
             </form>
+            </div>
+
+            <div class="modal" tabindex="-1" role="dialog" id ="register">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Register for Otter Show Deals</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <fieldset class="form-group">
+                            <label for="firstname" >First Name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="firstname" >Last Name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="firstname" >Email</label>
+                      <input type="text" class="form-control" id="email" placeholder="Email...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="firstname" >Password</label>
+                      <input type="text" class="form-control" id="password" placeholder="Password...">
+                    </fieldset>
+                  </form>
+
+
+
+
+
+
+
+
+                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
         <div class="container my-5">
@@ -189,47 +235,8 @@
             </ul>
         </div>
 </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
+</div>
+</div>
 
 
 
@@ -238,5 +245,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+
+
+    </script>
+  
+  
   </body>
 </html>
